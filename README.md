@@ -1,34 +1,46 @@
-# PyMacroRecord
+# Securily Macro Recorder
+
 <div align="center">
-  <a href="https://github.com/LOUDO56/PyMacroRecord/releases"><img src="https://github.com/LOUDO56/PyMacroRecord/assets/117168736/ff16ba4d-7979-4719-bb8f-78587cb5032f" alt="pmr logo"></a>
+  <img src="src/assets/securily-logo.png" alt="Securily Logo">
   <p>
-    Free. Easy <br>
-    Coded with Python, PyMacroRecord is one of the best free macro recorder you will find. <br>
-    No <b>ads</b>, no <b>premium</b>, everything <b>FREE</b>
+    **Efficient. Intuitive. Secure.**<br>
+    Securily Macro Recorder is an advanced tool designed to help you automate the recording of application login steps and general application workflows that require security testing.<br>
+    Perfect for pentesters and vulnerability scanners to streamline the process of testing web and software applications.
   </p>
-  <a href="https://github.com/LOUDO56/PyMacroRecord/releases"><img alt="PyMacroRecord count download" src="https://img.shields.io/github/downloads/LOUDO56/PyMacroRecord/total?label=Downloads"/></a>
+  <a href="https://github.com/securily/SecurilyMacroRecorder/releases"><img alt="Download Securily Macro Recorder" src="https://img.shields.io/github/downloads/securily/SecurilyMacroRecord/total?label=Downloads"/></a>
 </div>
 
-
 # Overview
-PyMacroRecord works with a GUI made using tkinter, making it easier for users to interact with it.
-![image](https://github.com/LOUDO56/PyMacroRecord/assets/117168736/2a1b2d0e-d950-40ad-84e2-971464058664)
+Securily Macro Recorder is a derivative work of the open-source <a href="https://github.com/LOUDO56/PyMacroRecord">PyMacroRecord project</a>, licensed under the GNU General Public License v3.0. This version has been rebranded and modified for security testing purposes, specifically to help customers record login steps and application workflows for vulnerability scanning and penetration testing.
 
 # Features
-- Very Easy to use
-- Free. No limitations. No "premium" purchase.
-- You can set an infinite amount of repeats.
-- You can change the speed of your record.
-- You can put interval in your playbacks
-- You can save your record.
-- You can load your record.
-- You can share your record with other people.
-- Universal Files (work with .json).
-- After-playback options, e.g., Standby or shutdown computer.
-- Can choose from recording mouse movement, click and keyboard input
-- Custom Hotkey for starting a record and stop it, start playback and stop it
-- Mouse Movement, click, and keyboard recording.
-- Smooth recording of the mouse.
+- **Intuitive Interface**: Easy to use, no coding required.
+- **Perfect for Security Testing**: Record login flows and application steps for pentesting.
+- **Full Control**: Adjust playback speed, repeat actions, and set intervals between steps.
+- **Save and Share**: Save your recordings and share them with security teams or pentesters.
+- **Universal File Format**: Export recordings as `.json` files for cross-platform compatibility.
+- **Custom Hotkeys**: Define custom hotkeys for recording and playback.
+- **Cross-Platform**: Available for Windows, macOS, and Linux.
+
+# How Does It Work?
+1. **Start Recording**: Click the red button to start recording. Move your mouse, type on your keyboard—everything is captured.  
+2. **Stop Recording**: Click the black square to stop.  
+3. **Playback**: Play your recorded actions by pressing the green play button.  
+4. **Stop Playback**: Stop the playback using the `F3` key.
+
+# Use Case: Security Testing
+The Securily Macro Recorder is perfect for security testing. By capturing complex application workflows and login procedures, it allows pentesters to run automated tests with recorded scripts, ensuring the security of various components in an application, including login mechanisms, data entry, and other critical processes.
+
+# Installation
+Follow the steps below to install and use Securily Macro Recorder on your platform:
+
+- Download the latest source code [here](https://github.com/securily/SecurilyMacroRecorder).
+- Extract the archive.
+- Install dependencies with `pip3 install -r requirements.txt`.
+- (Linux users: You may need to install Tkinter manually and remove `win10toast` from `requirements.txt`.)
+- Run the application with `python3 main.py`.
+
+There is also a separate branch for Windows-specific builds, available [here](https://github.com/securily/SecurilyMacroRecorder/tree/windows).
 
 # How does this work?
 To start recording, you simply have to press the red button\
@@ -119,13 +131,10 @@ pyinstaller --noconfirm --onedir --windowed --icon "src/assets/logo.ico" --name 
 ```
 
 # Support
-Developing a software is not an easy task. If you really like this project, please consider making a small donation, it really helps and means a lot! <3
+Developing software is not an easy task. If you really like this project, please consider making a donation to the original <a href="https://github.com/LOUDO56/PyMacroRecord">Author</a>
 \
 \
 By making a donation, your name will appear in the "Donors" section of the PyMacroRecord software and among the last 5 donors on the [PyMacroRecord](https://www.pymacrorecord.com) website as a thank you!
-\
-\
-<a href='https://ko-fi.com/loudo' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 
 # License
 

@@ -1,0 +1,162 @@
+{
+  "information": {
+    "author": "Mav55",
+    "lang_short": "es",
+    "lang_long": "Español"
+  },
+  "content": {
+    "global": {
+      "confirm_button": "Confirmar",
+      "cancel_button": "Cancelar",
+      "close_button": "Cerrar",
+      "error": "Error",
+      "previous_text": "Anterior",
+      "next_text": "Siguiente",
+      "confirm_save": "¿Desea guardar su grabación?",
+      "confirm": "Confirmar",
+      "information": "Información",
+      "restart_software_text": "Necesita reiniciar el software para que los cambios surtan efecto."
+    },
+    "new_version": {
+      "title": "Actualización de software",
+      "sub_text_1": "Nueva versión",
+      "sub_text_2": "disponible!",
+      "sub_text_3": "¿Desea descargarla ahora?",
+      "ignore_button": "Ignorar",
+      "remind_later_button": "Recordar más tarde",
+      "download_button": "Descargar actualización"
+    },
+    "file_menu": {
+      "file_text": "Archivo",
+      "new_text": "Nuevo",
+      "load_text": "Cargar",
+      "save_text": "Guardar",
+      "save_as_text": "Guardar como"
+    },
+    "options_menu": {
+      "options_text": "Opciones",
+      "playback_menu": {
+        "playback_text": "Reproducción",
+        "speed_text": "Velocidad",
+        "speed_settings": {
+          "title": "Configuración de velocidad",
+          "sub_text": "Ingrese un número de velocidad entre 0.1 y 10",
+          "error_new_value": "¡El valor de velocidad debe estar entre 0.1 y 10!"
+        },
+        "repeat_text": "Repetir",
+        "repeat_settings": {
+          "title": "Configuración de repeticiones",
+          "sub_text": "Ingrese el número de repeticiones",
+          "error_new_value": "No puede tener menos de 1 repetición."
+        },
+        "for_text": "Por",
+        "for_settings": {
+          "title": "Configuración de duración"
+        },
+        "interval_text": "Intervalo",
+        "interval_settings": {
+          "title": "Configuración de intervalo"
+        },
+        "for_interval_settings": {
+          "hours_text": "Horas",
+          "minutes_text": "Minutos",
+          "seconds_text": "Segundos",
+          "error_new_value_multiple": "los valores de entrada son incorrectos",
+          "error_new_value_single": "el valor de entrada es incorrecto"
+        },
+        "scheduled_text": "Programado",
+        "scheduled_settings": {
+          "title": "Configuración programada"
+        },
+        "delay_text": "Retraso",
+        "delay_settings": {
+          "title": "Configuración de retraso",
+          "sub_text": "Ingrese el retraso entre repeticiones",
+          "error_new_value": "No puede tener menos de 0 de retraso."
+        }
+      },
+      "recordings_menu": {
+        "recordings_text": "Grabaciones",
+        "mouse_movement_text": "Movimiento del ratón",
+        "mouse_click_text": "Clic del ratón",
+        "keyboard_text": "Teclado"
+      },
+      "json_compact": "Compactar datos del macro",
+      "settings_menu": {
+        "settings_text": "Configuración",
+        "lang_text": "Idioma",
+        "lang_settings": {
+          "title": "Configuración de idioma",
+          "sub_text": "Elija su idioma"
+        },
+        "hotkeys_text": "Teclas rápidas",
+        "hotkeys_settings": {
+          "title": "Configuración de teclas rápidas",
+          "start_record_text": "Iniciar grabación",
+          "stop_record_text": "Detener grabación",
+          "start_playback_text": "Iniciar reproducción",
+          "stop_playback_text": "Detener reproducción",
+          "clear_text": "Limpiar",
+          "please_key_text": "Por favor, presione una tecla",
+          "error_hotkeys": "No puede tener las mismas teclas rápidas para iniciar grabación y reproducción"
+        },
+        "minimization_text": "Minimización",
+        "minimization_toast": "PyMacroRecord se ha minimizado.",
+        "minimization_menu": {
+          "minimization_when_playing_text": "Minimizar al reproducir",
+          "minimization_when_recording_text": "Minimizar al grabar"
+        },
+        "after_playback_text": "Después de la reproducción",
+        "after_playback_settings": {
+          "when_playback_complete_text": "Después de completar la reproducción",
+          "title": "Configuración después de la reproducción",
+          "sub_text": "Al completar la reproducción",
+          "idle": "Inactivo",
+          "quit software": "Cerrar software",
+          "standby": "Esperar",
+          "log off computer": "Cerrar sesión en el equipo",
+          "turn off computer": "Apagar el equipo",
+          "restart computer": "Reiniciar el equipo",
+          "hibernate (if enabled)": "Hibernar (si está habilitado)"
+        }
+      },
+      "others_menu": {
+        "others_text": "Otros",
+        "check_update_text": "Buscar actualizaciones",
+        "reset_settings_text": "Restablecer configuración",
+        "reset_settings_confirmation": "¿Está seguro de que desea restablecer su configuración?",
+        "fixed_timestamp_text": "Marca de tiempo fija",
+        "fixed_timestamp_settings": {
+          "title": "Configuración de marca de tiempo fija",
+          "sub_text": "Ingrese una marca de tiempo fija"
+        }
+      }
+    },
+    "help_menu": {
+      "help_text": "Ayuda",
+      "tutorial_text": "Tutorial",
+      "about_text": "Acerca de",
+      "website_text": "Sitio web",
+      "about_settings": {
+        "title": "Acerca de",
+        "publisher_text": "Editor",
+        "version_text": "Versión",
+        "license_text": "Bajo licencia",
+        "version_check_update_text": {
+          "up_to_date": "Actualizado",
+          "outdated": "Desactualizado",
+          "disabled": "Verificación de actualización deshabilitada",
+          "failed": "No se puede comprobar si hay una nueva actualización"
+        }
+      }
+    },
+    "others_menu": {
+      "others_text": "Otros",
+      "donors_text": "Donantes",
+      "donors_settings": {
+        "title": "Donantes",
+        "sub_text": "Todos los donantes"
+      }
+    }
+  }
+}
