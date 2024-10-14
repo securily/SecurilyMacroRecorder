@@ -17,7 +17,7 @@ from os import path
 from sys import platform, argv
 from pystray import Icon
 from pystray import MenuItem
-from PIL import Image
+from PIL import Image, ImageTk  # Import ImageTk from PIL
 from threading import Thread
 from json import load
 from time import time
@@ -61,7 +61,9 @@ class MainApp(Window):
         # Main Buttons (Start record, stop record, start playback, stop playback)
 
         # Play Button
-        self.playImg = PhotoImage(file=resource_path(path.join("assets", "button", "play.png")))
+        image_path = resource_path(path.join("assets", "button", "play.png"))
+        image = Image.open(image_path)
+        self.playImg = ImageTk.PhotoImage(image)
 
         # Import record if opened with .pmr extension
         if len(argv) > 1:
@@ -76,12 +78,16 @@ class MainApp(Window):
         self.playBtn.pack(side=LEFT, padx=50)
 
         # Record Button
-        self.recordImg = PhotoImage(file=resource_path(path.join("assets", "button", "record.png")))
+        image_path = resource_path(path.join("assets", "button", "record.png"))
+        image = Image.open(image_path)
+        self.recordImg = ImageTk.PhotoImage(image)
         self.recordBtn = Button(self, image=self.recordImg, command=self.macro.start_record)
         self.recordBtn.pack(side=RIGHT, padx=50)
 
         # Stop Button
-        self.stopImg = PhotoImage(file=resource_path(path.join("assets", "button", "stop.png")))
+        image_path = resource_path(path.join("assets", "button", "stop.png"))
+        image = Image.open(image_path)
+        self.stopImg = ImageTk.PhotoImage(image)
 
         record_management = RecordFileManagement(self, self.menu)
 
@@ -108,7 +114,9 @@ class MainApp(Window):
 
     def systemTray(self):
         """Just to show little icon on system tray"""
-        image = Image.open(resource_path(path.join("assets", "logo.ico")))
+        image_path = resource_path(path.join("assets", "logo.ico"))
+        image = Image.open(image_path)
+        self.icon_image = ImageTk.PhotoImage(image)
         menu = (
             MenuItem('Show', action=self.deiconify, default=True),
         )
@@ -130,7 +138,7 @@ class MainApp(Window):
             wantToSave = confirm_save(self)
             if wantToSave:
                 RecordFileManagement(self, self.menu).save_macro()
-            elif wantToSave == None:
+            elif wantToSave is None:
                 return
         if platform.lower() != "darwin":
             self.icon.stop()
