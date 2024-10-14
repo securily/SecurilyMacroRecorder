@@ -1,3 +1,6 @@
+import os
+os.environ['TK_SILENCE_DEPRECATION'] = '1'
+
 from windows import MainApp
 from sys import platform
 

@@ -27,10 +27,10 @@ if platform.lower() == "win32":
 
 
 class MainApp(Window):
-    """Main windows of the application"""
+    """Main window of the application"""
 
     def __init__(self):
-        super().__init__("PyMacroRecord", 350, 200)
+        super().__init__("Securily Macro Recorder", 350, 200)
         self.attributes("-topmost", 1)
         if platform == "win32":
             self.iconbitmap(resource_path(path.join("assets", "logo.ico")))
